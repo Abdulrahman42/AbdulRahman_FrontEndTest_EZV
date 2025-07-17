@@ -61,18 +61,18 @@ yarn dev
 .
 ├── app/                    # App router directory
 │   ├── layout.tsx          # Root layout
-│   ├── page.tsx            # Home page
-│   └── providers.tsx       # Redux provider
+│   └──page.tsx             # Home page      
 ├── components/             # Reusable components
-│   ├── TodoForm.tsx        # Todo creation form
-│   ├── TodoList.tsx        # Todo display component
-│   └── TodoPagination.tsx  # Pagination controls
-├── store/                  # Redux store configuration
-│   ├── api.ts              # RTK Query API definition
-│   └── store.ts            # Redux store setup
+│   ├── Form.tsx            # Todo creation form
+│   └── TodoList.tsx        # Todo display component
+├── libs/api/todo.ts        # RTK Query API definition
+├── store/index.ts          # Redux store setup
 ├── types/                  # TypeScript definitions
-│   └── todo.d.ts           # Todo interface
+│   └── todo.ts             # Todo interface
 ├── public/                 # Static assets
+├── Template/               # Template
+│   ├── TemplateLayout.tsx  # Redux provider
+│   └── TemplatePage.tsx    # Home page template
 ├── styles/                 # Global styles
 │   └── globals.css
 ├── next.config.js          # Next.js configuration
